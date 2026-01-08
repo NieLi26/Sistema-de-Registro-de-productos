@@ -19,4 +19,4 @@ El sistema se ha desarrollado usando tecnologias como PHP, PotgreSQL, HTML5, JS 
     * db_name = prueba_desis
 - Use el archivo **insert.sql** en la carpeta llamada **sql** en la raiz del proyecto para crear las tablas base.
 - Abra la carpeta htdocs en la carpeta XAMPP. Cree una carpeta lladama **prueba-desis**, detro de ahi copie todo el contenido de este directorio raiz.
-- Abra el navegador, escriba en la url *localhost:<puerto_apache>/test-desis-php*, presione enter  y debe ver la página de index del sitio web.
+- Abra el navegador, escriba en la url *localhost:<puerto_apache>/prueba-desis*, presione enter  y debe ver la página de index del sitio web.
