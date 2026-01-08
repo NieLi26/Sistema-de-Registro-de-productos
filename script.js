@@ -47,7 +47,7 @@ function loadSelect() {
             const data = JSON.parse(xhr.responseText);
             // Llenar bodegas
             const bodegaSelect = document.getElementById('bodega');
-            bodegaSelect.innerHTML = '<option value="">-- Seleccione bodega --</option>';
+            bodegaSelect.innerHTML = '<option value=""></option>';
             data.bodegas.forEach(b => {
                 const opt = document.createElement('option');
                 opt.value = b.id;  
@@ -57,7 +57,7 @@ function loadSelect() {
 
             // Llenar monedas
             const monedaSelect = document.getElementById('moneda');
-            monedaSelect.innerHTML = '<option value="">-- Seleccione moneda --</option>';
+            monedaSelect.innerHTML = '<option value=""></option>';
             data.monedas.forEach(m => {
                 const opt = document.createElement('option');
                 opt.value = m.id;
@@ -82,7 +82,7 @@ function changeSucursalSelect( bodega_id ) {
             const data = JSON.parse(xhr.responseText);
             // Llenar sucursales
             const sucurusalSelect = document.getElementById('sucursal');
-            sucurusalSelect.innerHTML = '<option value="">-- Seleccione una sucursal --</option>';
+            sucurusalSelect.innerHTML = '<option value=""></option>';
             data.sucursales.forEach(b => {
                 const opt = document.createElement('option');
                 opt.value = b.id;  
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectedBodegaId) {
             changeSucursalSelect(selectedBodegaId);
         } else {
-            document.getElementById('sucursal').innerHTML = '<option value="">-- Seleccione una sucursal --</option>';
+            document.getElementById('sucursal').innerHTML = '<option value=""></option>';
         }
     });
 });
